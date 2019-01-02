@@ -105,6 +105,6 @@ registerBlockType( 'cgb/block-p5js', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	save( { attributes } ) {
-		return <script dangerouselySetInnerHTML={ { __html: attributes.content } } />;
+		return <script dangerouslySetInnerHTML={ { __html: attributes.content } } />;
 	},
 } );
