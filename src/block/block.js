@@ -44,7 +44,7 @@ registerBlockType( 'cgb/block-p5js', {
 	attributes: {
 		content: {
 			type: 'string',
-			source: 'text',
+			source: 'html',
 		},
 	},
 
@@ -79,7 +79,10 @@ registerBlockType( 'cgb/block-p5js', {
 			<Disabled.Consumer>
 				{ ( isDisabled ) => (
 					( isPreview || isDisabled ) ? (
-						<SandBox html={ attributes.content } />
+						<SandBox html={
+							'<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>' +
+							'<script>' + attributes.content + '</script>'
+						} />
 					) : (
 						<PlainText
 							value={ attributes.content }
@@ -102,6 +105,6 @@ registerBlockType( 'cgb/block-p5js', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	save( { attributes } ) {
-		return <script>{ attributes.content }</script>;
+		return <script dangerouselySetInnerHTML={ { __html: attributes.content } } />;
 	},
 } );
