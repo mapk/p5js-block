@@ -8,7 +8,6 @@
 import './style.scss';
 import './editor.scss';
 
-const { RawHTML } = wp.element.createElement;
 const { Disabled, SandBox, SVG, Path } = wp.components;
 const { BlockControls, PlainText } = wp.editor;
 const { withState } = wp.compose;
@@ -45,6 +44,7 @@ registerBlockType( 'cgb/block-p5js', {
 		content: {
 			type: 'string',
 			source: 'html',
+			selector: 'script',
 		},
 	},
 
