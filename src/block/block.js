@@ -1,17 +1,15 @@
 /**
  * BLOCK: p5.js
- *
- * Registering a basic block with Gutenberg.
  */
 
 //  Import CSS.
 import './style.scss';
 import './editor.scss';
 
+const { RawHTML } = wp.element;
 const { Disabled, SandBox, SVG, Path } = wp.components;
 const { BlockControls, PlainText } = wp.editor;
 const { withState } = wp.compose;
-
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 
@@ -32,12 +30,12 @@ registerBlockType( 'cgb/block-p5js', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'p5js' ), // Block title.
 	description: __( 'Add custom p5.js code and preview it as you edit.' ),
-	icon: <SVG viewBox="0 0 125 114" xmlns="http://www.w3.org/2000/svg"><Path d="M75.9,40.4l38.8-11.7l7.6,23.4L83.6,65.3l24,34L87.4,114L62.2,80.6l-24.6,32.5l-19.6-15l24-32.8L3,51.3l7.6-23.5l39.1,12.6V0h26.2L75.9,40.4L75.9,40.4z" /></SVG>,
+	icon: <SVG viewBox="0 0 125 114" xmlns="http://www.w3.org/2000/svg"><Path d="M75.9,40.4l38.8-11.7l7.6,23.4L83.6,65.3l24,34L87.4,114L62.2,80.6l-24.6,32.5l-19.6-15l24-32.8L3,51.3l7.6-23.5l39.1,12.6V0h26.2L75.9,40.4L75.9,40.4z" fill="#ED225D" /></SVG>,
 	category: 'formatting', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'p5js' ),
 		__( 'Processing' ),
-		__( 'computational art' ),
+		__( 'generative art' ),
 	],
 
 	attributes: {
