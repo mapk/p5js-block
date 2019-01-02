@@ -1,0 +1,19 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-p5js .editor-plain-text {
+	font-family: Menlo,Consolas,monaco,monospace;
+	font-size: 14px;
+	color: #23282d;
+	padding: .8em 1em;
+	border: 1px solid #e2e4e7;
+	border-radius: 4px;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
