@@ -40,8 +40,6 @@ registerBlockType( 'cgb/block-p5js', {
 	attributes: {
 		content: {
 			type: 'string',
-			source: 'html',
-			selector: 'script',
 		},
 	},
 
