@@ -6,7 +6,6 @@
 import './style.scss';
 import './editor.scss';
 
-const { RawHTML } = wp.element;
 const { Disabled, SandBox, SVG, Path } = wp.components;
 const { BlockControls, PlainText } = wp.editor;
 const { withState } = wp.compose;
@@ -103,6 +102,6 @@ registerBlockType( 'cgb/block-p5js', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	save( { attributes } ) {
-		return <script dangerouslySetInnerHTML={ { __html: attributes.content } } />;
-	},
+        return null;
+    },
 } );
