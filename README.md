@@ -3,7 +3,7 @@
 [p5.js](http://p5js.org/) + [WordPress](https://wordpress.org/). Want to share some generative art on your own WordPress site? This is the plugin to make it happen. Add your custom p5.js code, and preview it in the Gutenberg editor before publishing it on your page or post.
 
 
-![See it in action](assets/images/p5js-block.gif)
+![See it in action](assets/p5js-block.gif)
 
 # 
 
