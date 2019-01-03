@@ -40,8 +40,6 @@ registerBlockType( 'cgb/block-p5js', {
 	attributes: {
 		content: {
 			type: 'string',
-			source: 'html',
-			selector: 'script',
 		},
 	},
 
@@ -102,6 +100,6 @@ registerBlockType( 'cgb/block-p5js', {
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
 	 */
 	save( { attributes } ) {
-		return <script dangerouslySetInnerHTML={ { __html: attributes.content } } />;
-	},
+        return null;
+    },
 } );
