@@ -20,15 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 function p5js_cgb_block_assets() { // phpcs:ignore
-    // Scripts.
-    wp_enqueue_script(
-        'p5-js', // Handle.
-        plugins_url( '/assets/js/p5.min.js', dirname( __FILE__ ) ),
-        array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
-        // filemtime( plugin_dir_path( __DIR__ ) . 'assets/js/p5.min.js' ), // Version: File modification time.
-        true // Enqueue the script in the footer.
-    );
-
     // Styles.
     wp_enqueue_style(
         'p5js-cgb-style-css', // Handle.
