@@ -39,8 +39,8 @@ A: Of course! This is the GitHub Repository: https://github.com/mapk/p5js-block
 
 == Screenshots ==
 
-[https://cldup.com/3fApRIemns.png]
-[https://cldup.com/52HidqigUH.gif]
+1. Insert the p5.js block into the editor.
+2. You can edit the code and preview the results from within the editor.
 
 == Changelog ==
 
