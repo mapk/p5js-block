@@ -28,9 +28,13 @@ This project was bootstrapped with [Create Guten Block](https://github.com/ahmad
 
 == Frequently Asked Questions ==
 
-= Can I contribute to the project? =
+= Q: Does this plugin require the Gutenberg plugin? =
 
-Of course! This is the GitHub Repository: https://github.com/mapk/p5js-block
+A: Yes, the Gutenberg plugin must be installed and active in order to use this block.
+
+= Q: Can I contribute to the project? =
+
+A: Of course! This is the GitHub Repository: https://github.com/mapk/p5js-block
 
 
 == Screenshots ==
