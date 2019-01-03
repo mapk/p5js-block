@@ -6,7 +6,6 @@
 import './style.scss';
 import './editor.scss';
 
-const { RawHTML } = wp.element;
 const { Disabled, SandBox, SVG, Path } = wp.components;
 const { BlockControls, PlainText } = wp.editor;
 const { withState } = wp.compose;
@@ -78,7 +77,7 @@ registerBlockType( 'cgb/block-p5js', {
 				{ ( isDisabled ) => (
 					( isPreview || isDisabled ) ? (
 						<SandBox html={
-							'<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>' +
+							'<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>' +
 							'<script>' + attributes.content + '</script>'
 						} />
 					) : (
