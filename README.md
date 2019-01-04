@@ -26,4 +26,5 @@ npm run
 * Currently, this plugin does not include the `p5.dom.js` or the `p5.sound.js` libraries.
 
 # 
-This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
+This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block) under the [MIT License](https://github.com/ahmadawais/create-guten-block/blob/master/LICENSE).
+This project uses the p5.js library which is free software under the [GPL License](http://p5js.org/copyright.html).

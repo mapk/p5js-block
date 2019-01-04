@@ -17,7 +17,9 @@ p5.js + WordPress. Want to share some generative art on your own WordPress site?
 * Currently, this plugin does not work with `createCanvas(windowWidth, windowHeight)`. You'll need to use actual integer values like, `createCanvas(700, 400)`.
 * Currently, this plugin does not include the `p5.dom.js` or the `p5.sound.js` libraries.
 
-This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
+This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block) under the [MIT License](https://github.com/ahmadawais/create-guten-block/blob/master/LICENSE).
+
+This project also uses the p5.js library which is free software under the [GPL License](http://p5js.org/copyright.html).
 
 
 == Installation ==
