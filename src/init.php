@@ -73,7 +73,6 @@ function p5js_cgb_editor_assets() { // phpcs:ignore
 add_action( 'enqueue_block_editor_assets', 'p5js_cgb_editor_assets' );
 
 function p5js_cgb__render_block( $attributes, $content ) {
-	var_dump($attributes);
     $scriptsAndStyles = [
         '<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>',
         '<script>' . $attributes['content'] . '</script>',
