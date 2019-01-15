@@ -16,6 +16,8 @@ p5.js + WordPress. Want to share some generative art on your own WordPress site?
 
 * Currently, this plugin does not work with `createCanvas(windowWidth, windowHeight)`. You'll need to use actual integer values like, `createCanvas(700, 400)`.
 * Currently, this plugin does not include the `p5.dom.js` or the `p5.sound.js` libraries.
+* Double-forward slash commenting (`//`) does not work due to the way it's escaped. Use `/* comment */` instead.
+* Because this solution uses iframes, the height of the iframe is currently defined in the CSS, but I'm looking for a workaround for this.
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block) under the [MIT License](https://github.com/ahmadawais/create-guten-block/blob/master/LICENSE).
 
@@ -32,7 +34,7 @@ This project also uses the p5.js library which is free software under the [GPL L
 
 = Q: Does this plugin require the Gutenberg plugin? =
 
-A: Yes, the Gutenberg plugin must be installed and active in order to use this block.
+A: Yes, the Gutenberg plugin, or WordPress 5.0 must be installed and active in order to use this block.
 
 = Q: Can I contribute to the project? =
 
