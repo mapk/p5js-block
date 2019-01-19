@@ -5,7 +5,7 @@ jQuery( document ).ready( function() {
 		const iFrame = jQuery( block ).find( 'iframe' );
 		jQuery( iFrame ).on( 'load', function() {
 			const iFrameBody = jQuery( this ).get( 0 ).contentWindow.document.body;
-			jQuery( iFrame, block ).height( jQuery( iFrameBody ).find( 'canvas' ).height() );
+			jQuery( iFrame, block ).height( jQuery( iFrameBody ).find( 'canvas' ).height() + 5 );
 		} );
 	} );
 } );
