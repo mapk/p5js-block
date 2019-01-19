@@ -27,6 +27,16 @@ function p5js_cgb_block_assets() { // phpcs:ignore
         array( 'wp-editor' ) // Dependency to include the CSS after it.
         // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
     );
+
+    if ( ! is_admin() ) {
+        wp_enqueue_script(
+            'p5-js-iframe-sizer-script', // Handle.
+            plugins_url( '/assets/iframe-sizer.js', dirname( __FILE__ ) ),
+            array( 'jquery', 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
+            // filemtime( plugin_dir_path( __DIR__ ) . 'assets/js/p5.min.js' ), // Version: File modification time.
+            true // Enqueue the script in the footer.
+        );
+    }
 }
 
 // Hook: Frontend assets.
@@ -70,7 +80,7 @@ function p5js_cgb__render_block( $attributes, $content ) {
         '<style>body{margin: 0; padding: 0;}</style>'
     ];
     return sprintf(
-        '<div class="%s"><iframe src="data:text/html;charset=utf-8,%s"></iframe></div>',
+        '<div class="%s"><iframe srcdoc="%s"></iframe></div>',
         'wp-block-cgb-block-p5js',
         htmlspecialchars( implode( $scriptsAndStyles, '' ), ENT_QUOTES ) );
 }
