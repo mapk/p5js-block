@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: p5.js Block
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
+ * Plugin URI: https://github.com/mapk/p5js-block
  * Description: Add custom p5.js code into this Gutenberg block and preview it as you edit.
  * Author: Mark Uraine
  * Author URI: https://markuraine.com
