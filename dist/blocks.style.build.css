@@ -1,16 +1,1 @@
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
-*/
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-p5js iframe {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  border: none; }
+.wp-block-cgb-block-p5js iframe{padding:0;margin:0;width:100%;border:none}

@@ -75,7 +75,7 @@ registerBlockType( 'cgb/block-p5js', {
 				{ ( isDisabled ) => (
 					( isPreview || isDisabled ) ? (
 						<SandBox html={
-							'<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>' +
+							'<script src="' + window._p5ScriptUrl + '"></script>' +
 							'<script>' + attributes.content + '</script>'
 						} />
 					) : (

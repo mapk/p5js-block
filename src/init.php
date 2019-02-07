@@ -31,7 +31,7 @@ function p5js_cgb_block_assets() { // phpcs:ignore
     if ( ! is_admin() ) {
         wp_enqueue_script(
             'p5-js-iframe-sizer-script', // Handle.
-            plugins_url( '/assets/iframe-sizer.js', dirname( __FILE__ ) ),
+            plugins_url( '/assets/js/iframe-sizer.js', dirname( __FILE__ ) ),
             array( 'jquery', 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), // Dependencies, defined above.
             // filemtime( plugin_dir_path( __DIR__ ) . 'assets/js/p5.min.js' ), // Version: File modification time.
             true // Enqueue the script in the footer.
@@ -61,6 +61,8 @@ function p5js_cgb_editor_assets() { // phpcs:ignore
         true // Enqueue the script in the footer.
     );
 
+    wp_add_inline_script( 'p5js-cgb-block-js', 'window._p5ScriptUrl = "' . plugins_url( '/assets/js/p5.min.js', dirname( __FILE__ ) ) . '";' );
+
     // Styles.
     wp_enqueue_style(
         'p5js-cgb-block-editor-css', // Handle.
@@ -75,7 +77,7 @@ add_action( 'enqueue_block_editor_assets', 'p5js_cgb_editor_assets' );
 
 function p5js_cgb__render_block( $attributes, $content ) {
     $scriptsAndStyles = [
-        '<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>',
+        '<script src="' . plugins_url( '/assets/js/p5.min.js', dirname( __FILE__ ) ) . '"></script>',
         '<script>' . $attributes['content'] . '</script>',
         '<style>body{margin: 0; padding: 0;}</style>'
     ];
