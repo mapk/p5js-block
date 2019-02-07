@@ -5,7 +5,7 @@
  * Description: Add custom p5.js code into this Gutenberg block and preview it as you edit.
  * Author: Mark Uraine
  * Author URI: https://markuraine.com
- * Version: 1.0.0
+ * Version: 1.1.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *

@@ -3,7 +3,7 @@ Contributors: mapk
 Tags: p5js, processing, generative art, visual data, javascript
 Requires at least: 5.0
 Tested up to: 5.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,5 +45,7 @@ A: Of course! This is the GitHub Repository: https://github.com/mapk/p5js-block
 2. You can edit the code and preview the results from within the editor.
 
 == Changelog ==
+
+1.1 - Inclusion of p5.js as a local dependency.
 
 1.0 - Functional prototype. It works great using iframes.
